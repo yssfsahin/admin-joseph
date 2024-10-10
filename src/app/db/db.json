@@ -8,13 +8,6 @@
       "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
     },
     {
-      "id": "Anil",
-      "baslik": "Anil",
-      "tarih": "10.10.10",
-      "altbaslik": "asdasdasdadad",
-      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
-    },
-    {
       "id": "Yusuf2",
       "baslik": "Yusuf2",
       "tarih": "12.12.12",
@@ -27,6 +20,27 @@
       "tarih": "12.12.2024",
       "altbaslik": "lorem asdasdasdadad",
       "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "enes",
+      "baslik": "Enes",
+      "tarih": "12.12.12",
+      "altbaslik": "asdasdasdasd",
+      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "ozge",
+      "baslik": "Özge",
+      "tarih": "12.12.12",
+      "altbaslik": "123123123123123123",
+      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "ttttttt",
+      "baslik": "asdasdasdasd",
+      "tarih": "23.23.23",
+      "altbaslik": "asdasdasdasdasd",
+      "resim": "https://rollerdesignstudio.com/images/f1337d2f-fd51-4031-873a-074920bfb12e444%20resim%20.jpg"
     }
   ]
 }

@@ -9,23 +9,24 @@ export class DuyuruService {
 
   constructor(private http: HttpClient) { }
 
+  baseUrl: string = "http://localhost:3000";
   getDuyuruById(id: any): Observable<any> {
-    return this.http.get(`http://localhost:3000/data/${id}`)
+    return this.http.get(`${this.baseUrl}/data/${id}`)
   }
 
   getTumDuyuru(): Observable<any> {
-    return this.http.get(`http://localhost:3000/data`);
+    return this.http.get(`${this.baseUrl}/data`);
   }
 
   yeniDuyuru(data: any): Observable<any> {
-    return this.http.post(`http://localhost:3000/data`, data);
+    return this.http.post(`${this.baseUrl}/data`, data);
   }
 
   duyuruGuncelle(data: any, id: any): Observable<any> {
-    return this.http.put(`http://localhost:3000/data/${id}`, data);
+    return this.http.put(`${this.baseUrl}/data/${id}`, data);
   }
 
   duyuruSil(id: any): Observable<any> {
-    return this.http.delete(`http://localhost:3000/data/${id}`);
+    return this.http.delete(`${this.baseUrl}/data/${id}`);
   }
 }

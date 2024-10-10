@@ -29,4 +29,8 @@ export class AppComponent {
       console.log('Flowbite yüklendi', flowbite);
     });
   }
+
+  duyuruEkle() {
+    this.router.navigateByUrl('/form');
+  }
 }
