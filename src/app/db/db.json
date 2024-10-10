@@ -1,32 +1,39 @@
 {
-    "data" : [
-        {
-          "id": "yusuf",
-          "baslik": "Yusuf",
-          "tarih": "12.12.12",
-          "altbaslik": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates sit officiis expedita nesciunt maxime. Quos inventore vitae atque! Accusantium, ipsum! Repudiandae qui animi velit perferendis fugiat, minima voluptatibus ex.",
-          "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
-        },
-        {
-          "id": "Anil",
-          "baslik": "Anil",
-          "tarih": "10.10.10",
-          "altbaslik": "asdasdasdadad",
-          "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
-        },
-        {
-          "id": "Yusuf2",
-          "baslik": "Yusuf2",
-          "tarih": "12.12.12",
-          "altbaslik": "lorem asdasdasdadad",
-          "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
-        },
-        {
-          "id": "Yeditepe",
-          "baslik": "Yeditepe",
-          "tarih": "12.12.2024",
-          "altbaslik": "lorem asdasdasdadad",
-          "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
-        }
-      ]
+  "data": [
+    {
+      "id": "yusuf",
+      "baslik": "guncelBaslik",
+      "tarih": "19.19.19",
+      "altbaslik": "guncelAltbaslik",
+      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "Anil",
+      "baslik": "Anil",
+      "tarih": "10.10.10",
+      "altbaslik": "asdasdasdadad",
+      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "Yusuf2",
+      "baslik": "Yusuf2",
+      "tarih": "12.12.12",
+      "altbaslik": "lorem asdasdasdadad",
+      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "Yeditepe",
+      "baslik": "Yeditepe",
+      "tarih": "12.12.2024",
+      "altbaslik": "lorem asdasdasdadad",
+      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    },
+    {
+      "id": "yeniVeri",
+      "baslik": "yeniBaslik",
+      "tarih": "99.99.99",
+      "altbaslik": "yeniAltbaslik",
+      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    }
+  ]
 }

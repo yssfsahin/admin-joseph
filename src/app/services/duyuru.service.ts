@@ -16,4 +16,12 @@ export class DuyuruService {
   getTumDuyuru(): Observable<any> {
     return this.http.get(`http://localhost:3000/data`);
   }
+
+  yeniDuyuru(data: any): Observable<any> {
+    return this.http.post(`http://localhost:3000/data`, data);
+  }
+
+  duyuruGuncelle(data: any, id: any): Observable<any> {
+    return this.http.put(`http://localhost:3000/data/${id}`, data);
+  }
 }

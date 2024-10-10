@@ -31,4 +31,30 @@ export class HomeComponent implements OnInit{
     this.router.navigate(['/duyuru/', id]);
   }
 
+  yeniDuyuru() {
+    const olusturulanVeri = {
+      id: "yeniVeri",
+      baslik: "yeniBaslik",
+      tarih: "99.99.99",
+      altbaslik: "yeniAltbaslik",
+      resim: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    }
+    this.duyuruService.yeniDuyuru(olusturulanVeri).subscribe((yeniVeri) => {
+      this.tumDuyurular.push(yeniVeri);
+    });
+    this.getanil();
+  }
+
+  duyuruGuncelle() {
+    const olusturulanVeri = {
+      id: "guncelVeri",
+      baslik: "guncelBaslik",
+      tarih: "19.19.19",
+      altbaslik: "guncelAltbaslik",
+      resim: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+    }
+    this.duyuruService.duyuruGuncelle(olusturulanVeri, "yusuf").subscribe((yeniVeri) => {
+    });
+    this.getanil();
+  }
 }
