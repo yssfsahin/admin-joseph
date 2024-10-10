@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  title: string = 'Kayıt Ol';
+  title: string = 'Form Sayfası';
   firstName: string = '';
   lastName: string = '';
   email: string = '';

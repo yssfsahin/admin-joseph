@@ -33,4 +33,8 @@ export class AppComponent {
   duyuruEkle() {
     this.router.navigateByUrl('/form');
   }
+
+  logingiris (){
+    this.router.navigateByUrl('/login');
+  }
 }

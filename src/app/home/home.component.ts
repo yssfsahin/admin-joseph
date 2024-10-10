@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit{
   }
 
   duyuruSilme() {
-    this.duyuruService.duyuruSil("Anil").subscribe((yeniVeri) => {
+    this.duyuruService.duyuruSil("yeniVeri").subscribe((yeniVeri) => {
     });
     this.getanil();
   }

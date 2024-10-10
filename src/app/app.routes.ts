@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DuyuruComponent } from './duyuru/duyuru.component';
 import { RegisterComponent } from './register/register.component';
 import { FormComponent } from './form/form.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
     {path: "dashboard", component: DashboardComponent},
@@ -14,6 +15,8 @@ export const routes: Routes = [
     {path: "contact", component: ContactComponent},
     {path: 'duyuru/:id', component: DuyuruComponent},
     {path: 'register', component: RegisterComponent},
-    {path: 'form', component: FormComponent}
+    {path: 'form', component: FormComponent},
+    {path: 'login', component: LoginComponent},
+
 
 ];

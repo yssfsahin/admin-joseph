@@ -41,6 +41,21 @@
       "tarih": "23.23.23",
       "altbaslik": "asdasdasdasdasd",
       "resim": "https://rollerdesignstudio.com/images/f1337d2f-fd51-4031-873a-074920bfb12e444%20resim%20.jpg"
+    },
+    {
+      "id": "sdasd",
+      "baslik": "aasdasd",
+      "tarih": "12.13.2002",
+      "altbaslik": "asdasd",
+      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mehmed_II_Doppelbildnis.jpg/440px-Mehmed_II_Doppelbildnis.jpg"
+    }
+  ],
+  "users": [
+    {
+      "username": "yusuf.sahin",
+      "password": "yeditepe123456**",
+      "role": "admin",
+      "id": "aa30"
     }
   ]
 }
