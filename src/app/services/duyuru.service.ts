@@ -24,4 +24,8 @@ export class DuyuruService {
   duyuruGuncelle(data: any, id: any): Observable<any> {
     return this.http.put(`http://localhost:3000/data/${id}`, data);
   }
+
+  duyuruSil(id: any): Observable<any> {
+    return this.http.delete(`http://localhost:3000/data/${id}`);
+  }
 }

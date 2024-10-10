@@ -27,13 +27,6 @@
       "tarih": "12.12.2024",
       "altbaslik": "lorem asdasdasdadad",
       "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
-    },
-    {
-      "id": "yeniVeri",
-      "baslik": "yeniBaslik",
-      "tarih": "99.99.99",
-      "altbaslik": "yeniAltbaslik",
-      "resim": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
     }
   ]
 }
