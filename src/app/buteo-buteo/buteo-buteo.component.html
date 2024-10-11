@@ -22,48 +22,40 @@
         </div>
     </div>
 </section>
+<hr>
 
 <div *ngFor="let item of buteom" class="flex justify-center p-4">
-    <!-- İçerik Bölümü -->
-  <div *ngIf="item.id % 2 === 0 && item.resim !== '' && item.aciklama !== ''" class="grid grid-cols-1 md:grid-cols-2 gap-8 container px-20 py-3"> <!--id = 3 3 acaba 2 ye bölününce ne olur -->
-    <!-- Metin Kısmı -->
-    <div>
-      <h2 class="text-2xl font-semibold mb-4 font-lora">{{item.baslik}}</h2>
-      <p class="text-lg font-lora">
-       {{item.aciklama}}
-      </p>
+  <ng-container *ngIf="item.resim !== '' && item.aciklama !== ''">
+    <div *ngIf="item.id % 2 === 0" class="grid grid-cols-1 md:grid-cols-2 gap-8 container px-4 md:px-20 py-3"> <!-- px-20'yi px-4 ile değiştirin -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 font-lora">{{item.baslik}}</h2>
+        <p class="text-lg font-lora">{{item.aciklama}}</p>
+      </div>
+      <div>
+        <img [src]="item.resim" [alt]="item.baslik" class="rounded-lg shadow-lg w-full">
+      </div>
     </div>
-    <!-- Görsel Kısmı -->
-    <div>
-      <img [src]="item.resim" alt="Albatros" class="rounded-lg shadow-lg w-full">
+    
+    <div *ngIf="item.id % 2 !== 0" class="grid grid-cols-1 md:grid-cols-2 gap-8 container px-4 md:px-20 py-3"> <!-- px-20'yi px-4 ile değiştirin -->
+      <div>
+        <img [src]="item.resim" [alt]="item.baslik" class="rounded-lg shadow-lg w-full">
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">{{item.baslik}}</h2>
+        <p class="text-lg text-gray-700">{{item.aciklama}}</p>
+      </div>
     </div>
-  </div>
-  
-    <!-- Resim veya Açıklama olamadığı zaman sayfaları ortalama kısmı -->
-  <div class="container px-20 py-3" *ngIf="item.resim === '' ">
+  </ng-container>
+
+  <div *ngIf="item.resim === ''" class="container px-4 md:px-20 py-3"> <!-- px-20'yi px-4 ile değiştirin -->
     <h2 class="text-2xl font-semibold mb-4 font-lora">{{item.baslik}}</h2>
     <p>{{item.aciklama}}</p>
   </div>
-  
-  <div class="flex-col container px-20 py-3" *ngIf="item.aciklama === '' ">
+
+  <div *ngIf="item.aciklama === ''" class="flex-col container px-4 md:px-20 py-3"> <!-- px-20'yi px-4 ile değiştirin -->
     <h2 class="text-2xl font-semibold mb-4 font-lora text-center">{{item.baslik}}</h2>
     <div class="flex justify-center">
-      <img [src]="item.resim" alt="Albatros" class="rounded-lg shadow-lg w-3/4">
+      <img [src]="item.resim" [alt]="item.baslik" class="rounded-lg shadow-lg w-3/4">
     </div>
   </div>
-  
-  
-  <div *ngIf="item.id % 2 !== 0 && item.resim !== '' && item.aciklama !== ''" class="grid grid-cols-1 md:grid-cols-2 gap-8 container px-20 py-3">
-    <!-- Görsel Kısmı -->
-    <div>
-      <img [src]="item.resim" alt="Albatros" class="rounded-lg shadow-lg w-full">
-    </div>
-    <!-- Metin Kısmı -->
-    <div>
-      <h2 class="text-2xl font-semibold mb-4">{{item.baslik}}</h2>
-      <p class="text-lg text-gray-700">
-       {{item.aciklama}}
-      </p>
-    </div>
-  </div>
-  </div>
+</div>

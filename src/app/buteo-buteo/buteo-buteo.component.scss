@@ -1,0 +1,11 @@
+.container-custom {
+    padding-left: 1rem;  // Mobil için sol boşluk
+    padding-right: 1rem; // Mobil için sağ boşluk
+  
+    // Ekran boyutu 768px ve üzeri için ayar
+    @media (min-width: 768px) {
+      padding-left: 5rem;  // Geniş ekranlar için sol boşluk
+      padding-right: 5rem; // Geniş ekranlar için sağ boşluk
+    }
+  }
+  
