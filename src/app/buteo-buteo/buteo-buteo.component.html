@@ -1,0 +1,69 @@
+
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div class="flex flex-col justify-center">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Gökyüzünün Sessiz Avcısı: Buteo Buteo</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Buteo buteo, ya da yaygın adıyla bayağı şahin, Avrupa, Asya ve Afrika'da yaşayan etkileyici bir yırtıcı kuştur. Geniş kanat açıklığı ve keskin görüşü ile tanınan bu kuş, avını ustalıkla yakalar. Çeşitli habitatlarda yaşayabilen Buteo buteo, ekosistemlerin dengesini korumada önemli bir rol oynar ve doğal güzellikleriyle gökyüzünde süzülen bir sanat eseri gibi izlenebilir.</p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0">
+                <a href="https://tr.wikipedia.org/wiki/Baya%C4%9F%C4%B1_%C5%9Fahin" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Wikipedia
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                <a href="https://tr.wikipedia.org/wiki/Kategori:Kartallar" class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                    Daha Fazlası
+                </a>  
+            </div>
+        </div>
+        <div>
+            <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-96 shadow-xl" src="https://www.youtube.com/embed/SW0lmqlNACE?si=_oBR-o67dZo_8JPP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<div *ngFor="let item of buteom" class="flex justify-center p-4">
+    <!-- İçerik Bölümü -->
+  <div *ngIf="item.id % 2 === 0 && item.resim !== '' && item.aciklama !== ''" class="grid grid-cols-1 md:grid-cols-2 gap-8 container px-20 py-3"> <!--id = 3 3 acaba 2 ye bölününce ne olur -->
+    <!-- Metin Kısmı -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4 font-lora">{{item.baslik}}</h2>
+      <p class="text-lg font-lora">
+       {{item.aciklama}}
+      </p>
+    </div>
+    <!-- Görsel Kısmı -->
+    <div>
+      <img [src]="item.resim" alt="Albatros" class="rounded-lg shadow-lg w-full">
+    </div>
+  </div>
+  
+    <!-- Resim veya Açıklama olamadığı zaman sayfaları ortalama kısmı -->
+  <div class="container px-20 py-3" *ngIf="item.resim === '' ">
+    <h2 class="text-2xl font-semibold mb-4 font-lora">{{item.baslik}}</h2>
+    <p>{{item.aciklama}}</p>
+  </div>
+  
+  <div class="flex-col container px-20 py-3" *ngIf="item.aciklama === '' ">
+    <h2 class="text-2xl font-semibold mb-4 font-lora text-center">{{item.baslik}}</h2>
+    <div class="flex justify-center">
+      <img [src]="item.resim" alt="Albatros" class="rounded-lg shadow-lg w-3/4">
+    </div>
+  </div>
+  
+  
+  <div *ngIf="item.id % 2 !== 0 && item.resim !== '' && item.aciklama !== ''" class="grid grid-cols-1 md:grid-cols-2 gap-8 container px-20 py-3">
+    <!-- Görsel Kısmı -->
+    <div>
+      <img [src]="item.resim" alt="Albatros" class="rounded-lg shadow-lg w-full">
+    </div>
+    <!-- Metin Kısmı -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">{{item.baslik}}</h2>
+      <p class="text-lg text-gray-700">
+       {{item.aciklama}}
+      </p>
+    </div>
+  </div>
+  </div>

@@ -7,6 +7,8 @@ import { DuyuruComponent } from './duyuru/duyuru.component';
 import { RegisterComponent } from './register/register.component';
 import { FormComponent } from './form/form.component';
 import { LoginComponent } from './login/login.component';
+import { ButeoButeoComponent } from './buteo-buteo/buteo-buteo.component';
+import { KaynaklarComponent } from './kaynaklar/kaynaklar.component';
 
 export const routes: Routes = [
     {path: "dashboard", component: DashboardComponent},
@@ -17,6 +19,8 @@ export const routes: Routes = [
     {path: 'register', component: RegisterComponent},
     {path: 'form', component: FormComponent},
     {path: 'login', component: LoginComponent},
+    {path: 'buteo-buteo', component: ButeoButeoComponent},
+    {path: 'kaynaklar', component: KaynaklarComponent}
 
 
 ];
